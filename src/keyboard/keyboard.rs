@@ -1,4 +1,4 @@
-use crate::util::{HidDevice, Protocol, ReportType, Subclass};
+use crate::keyboard::util::{HidDevice, Protocol, ReportType, Subclass};
 //use stm32f1xx_hal::prelude::*;
 
 const REPORT_DESCRIPTOR: &[u8] = &[
@@ -17,7 +17,8 @@ impl Keyboard {
         Keyboard { report: [0; 8] }
     }
 }
-// 
+
+
 impl HidDevice for Keyboard {
     fn subclass(&self) -> Subclass {
         Subclass::BootInterface

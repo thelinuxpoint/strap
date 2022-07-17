@@ -17,3 +17,5 @@ panic-halt = "^0.2.0"    # Panic handler
 stm32f1 = {version = "0.6", features = ["stm32f103", "rt"]}
 stm32-usbd = "*"
 usb-device = "*"
+heapless = "*"
+# num_enum = "0.5.7"
