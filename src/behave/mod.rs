@@ -1,3 +1,3 @@
 pub mod keyboard;
-pub mod keycodes;
+pub mod mouse;
 pub mod util;

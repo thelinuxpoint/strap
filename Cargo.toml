@@ -14,8 +14,12 @@ cortex-m = "^0.6.3"      # Access to the generic ARM peripherals
 cortex-m-rt = "^0.6.12"  # Startup code for the ARM Core
 embedded-hal = "^0.2.4"  # Access to generic embedded functions (`set_high`)
 panic-halt = "^0.2.0"    # Panic handler
-stm32f1 = {version = "0.6", features = ["stm32f103", "rt"]}
-stm32-usbd = "*"
 usb-device = "*"
-heapless = "*"
-# num_enum = "0.5.7"
+stm32f1xx-hal = { version = "*",features = ["rt", "stm32f103","stm32-usbd"]}
+# panic-semihosting = "*"
+usbd-serial = "*"
+usbd-webusb = "*"
+cortex-m-rtic = "*"
+rtt-target = { version = "0.3.1", features = ["cortex-m"] }
+systick-monotonic = "1.0.0"
+
