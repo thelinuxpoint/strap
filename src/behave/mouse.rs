@@ -136,3 +136,4 @@ impl<B: UsbBus> UsbClass<B> for HIDClass<'_, B> {
         xfer.reject().ok();
     }
 }
+//
